@@ -8,8 +8,8 @@ if __name__=="__main__":
     content=f.read()#File content
     alphabet="abcdefghijklmnopqrstuvwxyz"
     keyword=raw_input("Please enter the keyword for the mixed cypher: ")
-    print 'Plaintext: '
-    print alphabet
+    print( 'Plaintext: ')
+    print(alphabet)
     alphabet=keyword.lower()+alphabet #append lowercase keyword at beginning of alphabet
 
     i=0
@@ -20,7 +20,7 @@ if __name__=="__main__":
             mixed_cypher=mixed_cypher+alphabet[i]
         i=i+1
 
-    print "Ciphertext: ", mixed_cypher, "\n"
+    print("Ciphertext: ", mixed_cypher, "\n")
 
     i=0
     encryption=""
@@ -36,4 +36,4 @@ if __name__=="__main__":
         else:
             encryption=encryption+content[i]
         i=i+1
-    print encryption
+    print(encryption)
